@@ -1,13 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body, html {margin: 0;padding: 0;position: relative;}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background: #F2F2F2;
+    font-size: 18px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #3c3c3c;
+}
+
+div#root {
+    padding-bottom: 300px;
+}
+
+.container {
+    background: #F8F8F8;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 768px;
+}
+
+blockquote {
+    margin: 0;
+    border-left: 0.5em solid #d0d0d0;
+    color: gray;
+    padding: 0.7em 1em;
+}
+
+blockquote > p {
+    margin: 0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background: #3c3c3c;
+  color: #e8e8e8;
+  display: inline-block;
+  box-shadow: 0 0 0 3px #3c3c3c;
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+pre code {
+    padding: 5px;
+    margin: 0;
+    display: block;
+    font-size: 16px;
+    overflow-x: auto;
+}
+
+pre code::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  border-radius: 5px;
+}
+
+/* Track */
+pre code::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+pre code::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
 }
